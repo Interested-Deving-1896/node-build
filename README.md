@@ -1,68 +1,29 @@
+[update-readmes]   Mode: rewrite — migrating to template structure...
 # node-build
 
-Download, compile, and install Node on Unix-like systems.
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/node-build)
 
-[![Tests](https://img.shields.io/github/actions/workflow/status/nodenv/node-build/test.yml?label=tests&logo=github)](https://github.com/nodenv/node-build/actions/workflows/test.yml)
-[![Latest GitHub Release](https://img.shields.io/github/v/release/nodenv/node-build?label=github&logo=github&sort=semver)](https://github.com/nodenv/node-build/releases/latest)
-[![Latest Homebrew Release](https://img.shields.io/homebrew/v/node-build?logo=homebrew&logoColor=white)](https://formulae.brew.sh/formula/node-build)
-[![Latest npm Release](https://img.shields.io/npm/v/@nodenv/node-build?logo=npm&logoColor=white)](https://www.npmjs.com/package/@nodenv/node-build/v/latest)
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-node-build is a command-line tool that simplifies installation of any Node version from source or precompiled binary on Unix-like systems.
+## Architecture
 
-It is available as a plugin for [nodenv][] as the `nodenv install` command, or as a standalone program as the `node-build` command.
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-<!-- toc -->
+## Install
 
-- [Installation](#installation)
-  * [Upgrading](#upgrading)
-    + [Updating available build versions](#updating-available-build-versions)
-- [Usage](#usage)
-  * [Basic Usage](#basic-usage)
-  * [Advanced Usage](#advanced-usage)
-    + [Binaries](#binaries)
-    + [Custom Build Definitions](#custom-build-definitions)
-    + [Custom Build Configuration](#custom-build-configuration)
-    + [Applying Patches](#applying-patches)
-    + [Checksum Verification](#checksum-verification)
-    + [Package Mirrors](#package-mirrors)
-    + [Keeping the build directory after installation](#keeping-the-build-directory-after-installation)
-    + [Retry installation without v/node-/node-v prefix](#retry-installation-without-vnode-node-v-prefix)
-- [Getting Help](#getting-help)
-- [Credits](#credits)
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
-<!-- tocstop -->
-
-## Installation
-
-### Homebrew package manager
-```sh
-brew install node-build
-```
-
-Upgrade with:
-```sh
-brew upgrade node-build
-```
-
-### Clone as nodenv plugin using git
-```sh
-git clone https://github.com/nodenv/node-build.git "$(nodenv root)"/plugins/node-build
-```
-
-Upgrade with:
-```sh
-git -C "$(nodenv root)"/plugins/node-build pull
-```
-
-### Install manually as a standalone program
-
-First, download a tarball from https://github.com/nodenv/node-build/releases/latest. Then:
-```sh
-tar -xzf node-build-*.tar.gz
-PREFIX=/usr/local ./node-build-*/install.sh
+```bash
+git clone https://github.com/Interested-Deving-1896/node-build.git
+cd node-build
 ```
 
 ## Usage
+
 
 ### Basic Usage
 
@@ -216,26 +177,50 @@ does not exist by the name "node-v11.0.0", it will retry as "11.0.0".
 For this retry to be attempted, the environment variable `NODENV_PREFIX_RETRY`
 must be non-empty.
 
-## Getting Help
+## Configuration
 
-Please see the [node-build wiki][wiki] for solutions to common problems.
-Also, check out the [ruby-build wiki][].
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
 
-If you can't find an answer on the wiki, open an issue on the [issue tracker][].
-Be sure to include the full build log for build failures.
+## CI
 
-## Credits
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
 
-Forked from [Sam Stephenson][]'s [ruby-build][] by [Will McKenzie][]
-and modified for node.
+## Mirror chain
 
-  [nodenv]: https://github.com/nodenv/nodenv#readme
-  [definitions]: https://github.com/nodenv/node-build/tree/main/share/node-build
-  [wiki]: https://github.com/nodenv/node-build/wiki
-  [build-env]: https://github.com/nodenv/node-build/wiki#suggested-build-environment
-  [issue tracker]: https://github.com/nodenv/node-build/issues
-  [node-build-update-defs]: https://github.com/nodenv/node-build-update-defs
-  [Sam Stephenson]: https://github.com/sstephenson
-  [Will McKenzie]: https://github.com/oinutter
-  [ruby-build]: https://github.com/rbenv/ruby-build
-  [ruby-build wiki]: https://github.com/rbenv/ruby-build/wiki
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/node-build`](https://github.com/Interested-Deving-1896/node-build) and mirrored through:
+
+```
+Interested-Deving-1896/node-build  ──►  OpenOS-Project-OSP/node-build  ──►  OpenOS-Project-Ecosystem-OOC/node-build
+```
+
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
+
+## Contributors
+
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
+
+## Origins
+
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
+
+## Resources
+
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
+
+## License
+
+<!-- AI:start:license -->
+[MIT](https://github.com/Interested-Deving-1896/node-build/blob/main/LICENSE) © 2026 [Interested-Deving-1896](https://github.com/Interested-Deving-1896)
+<!-- AI:end:license -->
